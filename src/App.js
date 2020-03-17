@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import HelloMessage from './Components/HelloMessage'
+// import Counter from './Components/Counter'
+// import TodoApp from './Components/TodoApp';
+// import Hello from './Components/HelloCreate'
+// import Example from './Components/FunctionHello'
+// import Timer from './Components/Timer'
+import Board from './Components/Trial'
+import FunctionClick from './Components/FunctionClick'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HelloMessage name="Akash" />
+      <Board/>
+      <FunctionClick/>
+      {/* <Counter /> */}
+      {/* <TodoApp /> */}
+      {/* <Timer /> */}
+      {/* <Hello/> */}
+      {/* <Example/> */}
+
     </div>
   );
 }
